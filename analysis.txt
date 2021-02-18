@@ -1,0 +1,8 @@
+// HW3 - Analysis.txt
+// Andrew Stade
+// 10/22/2020
+
+ Using the worst-case run-time complexity, the Big O for the clear() function in this instance 
+ would be O(n) because the member/private data is NOT being de-allocated via delete in the destructor, 
+ instead using the clear() function which is linked to the destructor, 
+ only setting the stack to empty, not deleting the stack or modifying any other data, thus it being O(n).
